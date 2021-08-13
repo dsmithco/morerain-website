@@ -22,47 +22,45 @@ class Main extends React.Component {
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
         <article
-          id="intro"
-          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+          id="about"
+          className={`${this.props.article === 'about' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Intro</h2>
+          <h2 className="major">About More Rain</h2>
           <span className="image main">
             <img src={pic01} alt="" />
           </span>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
-          </p>
+          "More Rain" is the moniker for worship songs by Daniel Moraine Smith with the goal to lead 
+          others into Christ-centered worship. Each song is created with the desire to express simple, authentic, 
+          and christ-centered adoration for God. Daniel (Dan) leads worship regularly and serves in his local church's 
+          various ministries.</p>
+          
+          <p>"Growing up in the church I have always felt a deep connection to God through worship. 
+            I can recall services as a youth just singing endlessly about God's greatness and feeling His 
+            presence in those moments. This desire for God's presence and to bless His name in worship is what fuels 
+            the songs of More Rain."</p>
+
+          <p>"It wasn’t until attending college that I began learning how to play guitar & sing. I soon began 
+            leading small groups and worship and then services at church. My time at school was very formative for me in my 
+            faith and in developing as a worship leader. I happened to be surrounded by other students who were incredibly 
+            gifted musically and in the area of worship leadership (Kari Jobe, Jon Egan, Jared Anderson, Glenn Packiam, 
+            Ryan Tedder, Michael Gungor, David Gungor (Brilliance), and many others). I learned to lead with passion and 
+            from a place of gratefulness and transparency. It was also during that time that I developed a desire to write 
+            songs for congregational worship."</p>
           {close}
         </article>
 
         <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
+          id="music"
+          className={`${this.props.article === 'music' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">music</h2>
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
@@ -85,13 +83,13 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
+          id="links"
+          className={`${this.props.article === 'links' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">About</h2>
+          <h2 className="major">links</h2>
           <span className="image main">
             <img src={pic03} alt="" />
           </span>
