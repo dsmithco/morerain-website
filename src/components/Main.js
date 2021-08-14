@@ -42,14 +42,7 @@ class Main extends React.Component {
             I can recall services as a youth just singing endlessly about God's greatness and feeling His 
             presence in those moments. This desire for God's presence and to bless His name in worship is what fuels 
             the songs of More Rain."</p>
-
-          <p>"It wasn’t until attending college that I began learning how to play guitar & sing. I soon began 
-            leading small groups and worship and then services at church. My time at school was very formative for me in my 
-            faith and in developing as a worship leader. I happened to be surrounded by other students who were incredibly 
-            gifted musically and in the area of worship leadership (Kari Jobe, Jon Egan, Jared Anderson, Glenn Packiam, 
-            Ryan Tedder, Michael Gungor, David Gungor (Brilliance), and many others). I learned to lead with passion and 
-            from a place of gratefulness and transparency. It was also during that time that I developed a desire to write 
-            songs for congregational worship."</p>
+            
           {close}
         </article>
 
