@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
+import about from '../images/about.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
 
@@ -30,7 +30,7 @@ class Main extends React.Component {
         >
           <h2 className="major">About More Rain</h2>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <img src={about} alt="" />
           </span>
           <p>
           "More Rain" is the moniker for worship songs by Daniel Moraine Smith with the goal to lead 
@@ -61,24 +61,15 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">music</h2>
-          <span className="image main">
+          {/* <span className="image main">
             <img src={pic02} alt="" />
-          </span>
-          <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
-          </p>
-          <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
-          </p>
+          </span> */}
+          <iframe src="https://open.spotify.com/embed/artist/6fIAOtNh49o9ggr059aEEf" width="100%" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <br /><br />
+          <h4>Adoration (We Love You Jesus)</h4>
+          <h4>All I Need</h4>
+          <h4>Angels Adore</h4>
+          <h4>Only Jesus</h4>
           {close}
         </article>
 
@@ -90,18 +81,17 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">links</h2>
-          <span className="image main">
+          {/* <span className="image main">
             <img src={pic03} alt="" />
-          </span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
-          </p>
+          </span> */}
+          <p style={{fontWeight: '300', fontSize: '.8em'}}>
+              <a target="_blank" href="https://open.spotify.com/artist/6fIAOtNh49o9ggr059aEEf?si=dyavetAOQJmdY6A_HW3Nrg&dl_branch=1">SPOTIFY</a> <br /><br />
+              <a href="https://music.apple.com/us/artist/more-rain/1546437942" target="_blank">APPLE MUSIC</a> <br /><br />
+              <a href="https://www.youtube.com/channel/UCgmX-z98orMn8EtwmrsfjrQ" target="_blank">YOU TUBE</a> <br /><br />
+              <a href="https://soundcloud.com/morerain" target="_blank">SOUND CLOUD</a> <br /><br />
+              <a href="https://instagram.com/morerainmusic" target="_blank">INSTAGRAM</a> <br /><br />
+              <a href="https://facebook.com/morerainmusic" target="_blank">FACEBOOK</a> <br /><br />
+              <a href="https://soundcloud.com/morerain" target="_blank">WINGS MUSIC GROUP</a></p>
           {close}
         </article>
 
