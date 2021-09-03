@@ -41,10 +41,10 @@ class Main extends React.Component {
             presence in those moments. This desire for God's presence and to bless His name in worship is what fuels 
             the songs of More Rain."</p>
           
-            {/* <p><strong>Colossians 3:14-17</strong><br /> "And above all these put on love, which binds everything together in perfect harmony. 15 And let the peace of Christ rule in your hearts, to which indeed you were called in one body. And be thankful. 16 Let the word of Christ dwell in you richly, teaching and admonishing one another in all wisdom, singing psalms and hymns and spiritual songs, with thankfulness in your hearts to God. 17 And whatever you do, in word or deed, do everything in the name of the Lord Jesus, giving thanks to God the Father through him."</p>
+            <p><strong>Colossians 3:14-17</strong><br /> "And above all these put on love, which binds everything together in perfect harmony. 15 And let the peace of Christ rule in your hearts, to which indeed you were called in one body. And be thankful. 16 Let the word of Christ dwell in you richly, teaching and admonishing one another in all wisdom, singing psalms and hymns and spiritual songs, with thankfulness in your hearts to God. 17 And whatever you do, in word or deed, do everything in the name of the Lord Jesus, giving thanks to God the Father through him."</p>
             <p><strong>Roman 12:1-2</strong><br /> "I appeal to you therefore, brothers, by the mercies of God, to present your bodies as a living sacrifice, holy and acceptable to God, which is your spiritual worship. 2 Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect."</p>
             <p><strong>Psalm 95:1-6</strong><br /> "Oh come, let us sing to the Lord; let us make a joyful noise to the rock of our salvation! 2 Let us come into his presence with thanksgiving; let us make a joyful noise to him with songs of praise! 3 For the Lord is a great God, and a great King above all gods. 4 In his hand are the depths of the earth; the heights of the mountains are his also. 5 The sea is his, for he made it, and his hands formed the dry land. 6 Oh come, let us worship and bow down; let us kneel before the Lord, our Maker!"</p>
-            <p><strong>Philippians 2:10-11</strong><br /> "10 that at the name of Jesus every knee should bow, of those in heaven, and of those on earth, and of those under the earth, 11 and that every tongue should confess that Jesus Christ is Lord, to the glory of God the Father."</p> */}
+            <p><strong>Philippians 2:10-11</strong><br /> "10 that at the name of Jesus every knee should bow, of those in heaven, and of those on earth, and of those under the earth, 11 and that every tongue should confess that Jesus Christ is Lord, to the glory of God the Father."</p>
           {close}
         </article>
 
@@ -99,13 +99,13 @@ class Main extends React.Component {
         >
           <h2 className="major">Contact</h2>
           <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-          <script>
+          {/* <script>
             hbspt.forms.create({
             region: "na1",
             portalId: "20568477",
             formId: "d61875b1-7236-4d46-ab35-253329108ffc"
           });
-          </script>
+          </script> */}
           <form method="post" action="#">
             <div className="field half first">
               <label htmlFor="name">Name</label>
