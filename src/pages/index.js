@@ -105,10 +105,10 @@ class IndexPage extends React.Component {
             />
             <br/>
             <p style={{fontWeight: '300', fontSize: '.8em'}}>
-              <a target="_blank" href="https://open.spotify.com/artist/6fIAOtNh49o9ggr059aEEf?si=dyavetAOQJmdY6A_HW3Nrg&dl_branch=1">SPOTIFY</a> &nbsp; &nbsp; &nbsp; 
-              <a href="https://music.apple.com/us/artist/more-rain/1546437942" target="_blank">APPLE MUSIC</a> &nbsp; &nbsp; &nbsp; 
-              <a href="https://www.youtube.com/channel/UCgmX-z98orMn8EtwmrsfjrQ" target="_blank">YOU TUBE</a> &nbsp; &nbsp; &nbsp; 
-              <a href="https://soundcloud.com/morerain" target="_blank">SOUND CLOUD</a></p>
+              <a target="_blank" rel="noreferrer" href="https://open.spotify.com/artist/6fIAOtNh49o9ggr059aEEf?si=dyavetAOQJmdY6A_HW3Nrg&dl_branch=1">SPOTIFY</a> &nbsp; &nbsp; &nbsp; 
+              <a href="https://music.apple.com/us/artist/more-rain/1546437942" rel="noreferrer" target="_blank">APPLE MUSIC</a> &nbsp; &nbsp; &nbsp; 
+              <a href="https://www.youtube.com/channel/UCgmX-z98orMn8EtwmrsfjrQ" rel="noreferrer" target="_blank">YOU TUBE</a> &nbsp; &nbsp; &nbsp; 
+              <a href="https://soundcloud.com/morerain" rel="noreferrer" target="_blank">SOUND CLOUD</a></p>
             <Footer timeout={this.state.timeout} />
           </div>
           <div id="bg"></div>
