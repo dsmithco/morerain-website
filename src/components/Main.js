@@ -1,7 +1,77 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import about from '../images/about.jpg'
-import hbspt from '//js.hsforms.net/forms/shell.js'
+import HubspotForm from "react-hubspot-form";
+
+function formv3(){
+  // Create the new request 
+  var xhr = new XMLHttpRequest();
+  var url = 'https://api.hsforms.com/submissions/v3/integration/submit/20568477/d61875b1-7236-4d46-ab35-253329108ffc'
+  
+  // Example request JSON:
+  var data = {
+    "fields": [
+      {
+        "name": "email",
+        "value": "dsmithco+44@gmail.com"
+      },
+      {
+        "name": "firstname",
+        "value": "Jeff"
+      },
+      {
+        "name": "lastname",
+        "value": "Smith"
+      },
+      {
+        "name": "message",
+        "value": "alksjdfhasklfjdhaksjdf"
+      }
+    ],
+    "context": {
+      "pageUri": "www.example.com/page",
+      "pageName": "Example page"
+    },
+    "legalConsentOptions":{ // Include this object when GDPR options are enabled
+      "consent":{
+        "consentToProcess":true,
+        "text":"I agree to allow Example Company to store and process my personal data.",
+        "communications":[
+          {
+            "value":true,
+            "subscriptionTypeId":999,
+            "text":"I agree to receive marketing communications from Example Company."
+          }
+        ]
+      }
+    }
+  }
+
+  var final_data = JSON.stringify(data)
+
+  xhr.open('POST', url);
+  // Sets the value of the 'Content-Type' HTTP request headers to 'application/json'
+  xhr.setRequestHeader('Content-Type', 'application/json');
+
+  xhr.onreadystatechange = function() {
+      if(xhr.readyState == 4 && xhr.status == 200) { 
+          alert(xhr.responseText); // Returns a 200 response if the submission is successful.
+      } else if (xhr.readyState == 4 && xhr.status == 400){ 
+          alert(xhr.responseText); // Returns a 400 error the submission is rejected.          
+      } else if (xhr.readyState == 4 && xhr.status == 403){ 
+          alert(xhr.responseText); // Returns a 403 error if the portal isn't allowed to post submissions.           
+      } else if (xhr.readyState == 4 && xhr.status == 404){ 
+          alert(xhr.responseText); //Returns a 404 error if the formGuid isn't found     
+      }
+     }
+
+
+  // Sends the request 
+  
+  xhr.send(final_data)
+}
+
+
 class Main extends React.Component {
   render() {
     let close = (
@@ -12,7 +82,7 @@ class Main extends React.Component {
         }}
       ></div>
     )
-
+    // formv3();
     return (
       <div
         ref={this.props.setWrapperRef}
@@ -27,9 +97,9 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">About More Rain</h2>
-          <span className="image main">
+          {/* <span className="image main">
             <img src={about} alt="" />
-          </span>
+          </span> */}
           <p>
           "More Rain" is the moniker for worship songs by Daniel Moraine Smith with the goal to lead 
           others into Christ-centered worship. Each song is created with the desire to express simple, authentic, 
@@ -41,10 +111,10 @@ class Main extends React.Component {
             presence in those moments. This desire for God's presence and to bless His name in worship is what fuels 
             the songs of More Rain."</p>
           
-            <p><strong>Colossians 3:14-17</strong><br /> "And above all these put on love, which binds everything together in perfect harmony. 15 And let the peace of Christ rule in your hearts, to which indeed you were called in one body. And be thankful. 16 Let the word of Christ dwell in you richly, teaching and admonishing one another in all wisdom, singing psalms and hymns and spiritual songs, with thankfulness in your hearts to God. 17 And whatever you do, in word or deed, do everything in the name of the Lord Jesus, giving thanks to God the Father through him."</p>
-            <p><strong>Roman 12:1-2</strong><br /> "I appeal to you therefore, brothers, by the mercies of God, to present your bodies as a living sacrifice, holy and acceptable to God, which is your spiritual worship. 2 Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect."</p>
+            {/* <p><strong>Colossians 3:14-17</strong><br /> "And above all these put on love, which binds everything together in perfect harmony. 15 And let the peace of Christ rule in your hearts, to which indeed you were called in one body. And be thankful. 16 Let the word of Christ dwell in you richly, teaching and admonishing one another in all wisdom, singing psalms and hymns and spiritual songs, with thankfulness in your hearts to God. 17 And whatever you do, in word or deed, do everything in the name of the Lord Jesus, giving thanks to God the Father through him."</p> */}
+            {/* <p><strong>Roman 12:1-2</strong><br /> "I appeal to you therefore, brothers, by the mercies of God, to present your bodies as a living sacrifice, holy and acceptable to God, which is your spiritual worship. 2 Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect."</p> */}
             <p><strong>Psalm 95:1-6</strong><br /> "Oh come, let us sing to the Lord; let us make a joyful noise to the rock of our salvation! 2 Let us come into his presence with thanksgiving; let us make a joyful noise to him with songs of praise! 3 For the Lord is a great God, and a great King above all gods. 4 In his hand are the depths of the earth; the heights of the mountains are his also. 5 The sea is his, for he made it, and his hands formed the dry land. 6 Oh come, let us worship and bow down; let us kneel before the Lord, our Maker!"</p>
-            <p><strong>Philippians 2:10-11</strong><br /> "10 that at the name of Jesus every knee should bow, of those in heaven, and of those on earth, and of those under the earth, 11 and that every tongue should confess that Jesus Christ is Lord, to the glory of God the Father."</p>
+            {/* <p><strong>Philippians 2:10-11</strong><br /> "10 that at the name of Jesus every knee should bow, of those in heaven, and of those on earth, and of those under the earth, 11 and that every tongue should confess that Jesus Christ is Lord, to the glory of God the Father."</p> */}
           {close}
         </article>
 
@@ -98,7 +168,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+          {/* <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script> */}
           {/* <script>
             hbspt.forms.create({
             region: "na1",
@@ -106,6 +176,13 @@ class Main extends React.Component {
             formId: "d61875b1-7236-4d46-ab35-253329108ffc"
           });
           </script> */}
+                <HubspotForm
+                  portalId="20568477"
+                  formId="d61875b1-7236-4d46-ab35-253329108ffc"
+                  onSubmit={() => console.log("Submit!")}
+                  onReady={(form) => console.log("Form ready!")}
+                  loading={<div></div>}
+                />
           <form method="post" action="#">
             <div className="field half first">
               <label htmlFor="name">Name</label>

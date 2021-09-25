@@ -12,8 +12,6 @@ const Header = props => (
         <h1>MORE RAIN</h1>
         <p>
           Songs of worship 
-        <br/>
-          All for Jesus. All for His Church. 
         </p>
       </div>
     </div>
@@ -46,7 +44,7 @@ const Header = props => (
             Links
           </button>
         </li>
-        <li>
+        {/* <li>
           <button
             onClick={() => {
               props.onOpenArticle('contact')
@@ -54,7 +52,7 @@ const Header = props => (
           >
             Contact
           </button>
-        </li>
+        </li> */}
       </ul>
     </nav>
   </header>
