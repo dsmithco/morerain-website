@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter - Dimension V2',
-    author: 'Hunter Chang',
-    description: 'A Gatsby.js V2 Starter based on Dimension by HTML5 UP',
+    title: 'More Rain | Songs of Worship',
+    author: 'Daniel Moraine Smith',
+    description: '"More Rain" is the moniker for worship songs by Daniel Moraine Smith with the goal to lead others into Christ-centered worship. Each song is created with the desire to express simple, authentic, and christ-centered adoration for God. Daniel (Dan) leads worship regularly and serves in his local church\'s various ministries.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
